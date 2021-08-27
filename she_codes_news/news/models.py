@@ -3,7 +3,7 @@ from django.db import models
 
 
 class NewsStory(models.Model):
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=300)
     author = models.ForeignKey(
         get_user_model(),
         on_delete=models.CASCADE
