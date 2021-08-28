@@ -17,9 +17,9 @@
                 <a id="header-link" href="{% url 'news:index' %}">
                     <h1 id='logo'>She {Codes} News</h1>
                 </a>
-                {% include './nav.html' %}
             </div>
-        </header>
+            </header>
+            {% include './nav.html' %}
         {% block content %}{% endblock %}
     </body>
 <footer>
