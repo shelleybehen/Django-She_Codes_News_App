@@ -38,7 +38,10 @@ h3 {
 }
 
 nav {
-      display: inline-block;
+      flex-basis: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
 }
 
 a {
@@ -167,6 +170,6 @@ li a.active {
 }
 
 li a:hover:not(.active) {
-  background-color: white;
+  background-color: #555;
   color: white;
 }
