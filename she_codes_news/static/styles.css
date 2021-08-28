@@ -87,7 +87,7 @@ ul {
   }
   #form-wrapper { 
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-content: center;
     padding: 5px;
 }
