@@ -1,7 +1,7 @@
 
 {% load static %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<nav id='nav_buttons'>
+<nav>
     <ul><a href="{% url 'news:index' %}"><class="btn btn-info btn-lg">
         <span class="glyphicon glyphicon-home"></span> Home</a></a></ul>
             {% if request.user.is_authenticated %}
