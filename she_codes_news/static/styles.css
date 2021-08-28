@@ -31,7 +31,10 @@ h3 {
     flex-basis: 80%;
     display: flex;
 }
-
+#logo {
+  font-weight: bold;
+  color: #6b469a;
+}
 nav {
     flex-basis: 20%;
     display: flex;
