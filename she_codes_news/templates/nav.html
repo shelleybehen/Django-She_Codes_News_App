@@ -2,14 +2,15 @@
 {% load static %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <nav>
-    <ul><li><a href="{% url 'news:index' %}"><i class="glyphicon glyphicon-cloud"></i></a></li>
+    <li><a href="{% url 'news:index' %}"><a href="#" class="btn btn-info btn-lg">
+     <span class="glyphicon glyphicon-home"></span> Home</a></a></li>
     {% if request.user.is_authenticated %}
         <li><a href="#">{{ user.username }}</a></li>
         <li><a href="{% url 'logout' %}">Logout</a></li>
         <a href="{% url 'users:userProfile' user.id %}">Profile</a>
     {% else %}
         <li><a href="{% url 'login' %}">Login</a></li>
-        <li><a href="{% url 'users:createAccount' %}">Sign Up</a></li></ul>
+        <li><a href="{% url 'users:createAccount' %}">Sign Up</a></li>
     {% endif %} 
 </nav>
 <div class="footer">
