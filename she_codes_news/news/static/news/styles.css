@@ -85,6 +85,6 @@
     margin: 0 0 10px 10px;
     width: 50%;
 }
-#form-wrapper { text-align: justify;
-
+#form-wrapper { 
+    test-align: center;
 }
