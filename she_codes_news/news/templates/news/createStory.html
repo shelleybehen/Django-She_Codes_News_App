@@ -5,8 +5,8 @@
 {% load static %}
 
 {% block content %}
-    <div id= "form-wrapper">
-        <form action="" method="post">
+    <div >
+        <form id= "form-wrapper" action="" method="post">
             {% csrf_token %}
             {{ form.as_p }}
         <input type="submit" value="submit">
