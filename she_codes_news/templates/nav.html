@@ -1,8 +1,7 @@
 
 {% load static %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<nav>
-    <div id= 'nav_buttons'>
+<nav id='nav_buttons'>
     <ul><a href="{% url 'news:index' %}"><class="btn btn-info btn-lg">
         <span class="glyphicon glyphicon-home"></span> Home</a></a></ul>
             {% if request.user.is_authenticated %}
@@ -16,8 +15,7 @@
         <span class="glyphicon glyphicon-log-in"></span> Log in </a></a></li>
     <ul><a href="{% url 'users:createAccount' %}"><class="btn btn-info btn-lg">
         <span class="glyphicon glyphicon-edit"></span> Sign Up </a></a></ul>
-            {% endif %} 
-    </div>        
+            {% endif %}      
 </nav>
 <div class="footer">
 <div id="button"></div>
