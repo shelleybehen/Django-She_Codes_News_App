@@ -16,10 +16,11 @@
             <div id="header-text">
                 <a id="header-link" href="{% url 'news:index' %}">
                     <h1 id='logo'>She {Codes} News</h1>
+                    {% include './nav.html' %}
                 </a>
             </div>
             </header>
-            {% include './nav.html' %}
+            
         {% block content %}{% endblock %}
     </body>
 <footer>
