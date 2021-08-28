@@ -38,10 +38,7 @@ h3 {
 }
 
 nav {
-    flex-basis: 20%;
-    display: inline-block;
-    flex-direction: column;
-    align-items: flex-end;
+      float: right;
 }
 
 a {
