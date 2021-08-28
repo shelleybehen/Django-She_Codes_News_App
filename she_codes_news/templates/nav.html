@@ -2,20 +2,22 @@
 {% load static %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <nav>
+    <div id= 'nav_buttons'>
     <ul><a href="{% url 'news:index' %}"><class="btn btn-info btn-lg">
-     <span class="glyphicon glyphicon-home"></span> Home</a></a></ul>
-    {% if request.user.is_authenticated %}
-        <ul><a href="#">{{ user.username }}</a></ul>
-        <ul><a href="{% url 'logout' %}"><class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-log-out"></span> Log out </a></a></ul>
-        <ul><a href="{% url 'users:userProfile' user.id %}"> <class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-user"></span> profile </a></a></ul>
-    {% else %}
-        <ul><a href="{% url 'login' %}"><class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-log-in"></span> Log in </a></a></li>
-        <ul><a href="{% url 'users:createAccount' %}"><class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-edit"></span> Sign Up </a></a></ul>
-    {% endif %} 
+        <span class="glyphicon glyphicon-home"></span> Home</a></a></ul>
+            {% if request.user.is_authenticated %}
+    <ul><a href="#">{{ user.username }}</a></ul>
+    <ul><a href="{% url 'logout' %}"><class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-log-out"></span> Log out </a></a></ul>
+    <ul><a href="{% url 'users:userProfile' user.id %}"> <class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-user"></span> profile </a></a></ul>
+            {% else %}
+    <ul><a href="{% url 'login' %}"><class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-log-in"></span> Log in </a></a></li>
+    <ul><a href="{% url 'users:createAccount' %}"><class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-edit"></span> Sign Up </a></a></ul>
+            {% endif %} 
+    </div>        
 </nav>
 <div class="footer">
 <div id="button"></div>
