@@ -86,5 +86,8 @@
     width: 50%;
 }
 #form-wrapper { 
-    test-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
