@@ -85,3 +85,9 @@ ul {
   .active {
     background-color: #04AA6D;
   }
+  #form-wrapper { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
