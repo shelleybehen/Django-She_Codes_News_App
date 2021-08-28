@@ -13,6 +13,7 @@ header {
 
 h1 {
     font-family: 'Montserrat Subrayada', sans-serif;
+    color:white;
     text-decoration: none;
     font-size: 4rem;
     margin: 0;
@@ -28,7 +29,6 @@ h3 {
 }
 
 #header-text {
-    color:white;
     flex-basis: 80%;
     display: flex;
 }
