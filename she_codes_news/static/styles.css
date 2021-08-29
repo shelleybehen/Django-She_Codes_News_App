@@ -85,8 +85,9 @@ li a {
   .active {
     background-color: #04AA6D;
   }
-  #form-wrapper {
-    display: block;
+  .form-wrapper {
+    display: inline-block;
+    text-align:center;
     align-content:center;
     margin-left: auto;
     margin-right: auto;
