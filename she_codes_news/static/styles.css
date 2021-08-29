@@ -45,7 +45,7 @@ nav {
 a {
     margin: 2px;
     text-decoration: none;
-    color: white;
+    color: #000;
 }
 
 a, p {
@@ -63,6 +63,7 @@ ul {
 li {
     float: left;
     border-right:1px solid #bbb;
+    color: white;
 }
 
 li:last-child {
